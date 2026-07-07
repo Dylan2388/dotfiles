@@ -4,32 +4,28 @@ This repository manages personal dotfiles using a bare Git repository stored sep
 ## Initial setup
 This section documents the one-time setup already performed on the original machine.
 
-Create the bare repository
+Create a bare Git repository in ~/.cfg. A bare repository stores Git metadata and history, but does not create a normal checked-out working directory of its own.
 ```bash
 git init --bare "$HOME/.cfg"
 ```
-This creates a bare Git repository in ~/.cfg. A bare repository stores Git metadata and history, but does not create a normal checked-out working directory of its own.
 
-Create a helper alias
+Make Git use ~/.cfg as the Git directory and $HOME as the working tree, so files in the home directory can be tracked without turning the entire home directory into a normal Git repo.
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 ```
-This alias makes Git use ~/.cfg as the Git directory and $HOME as the working tree, so files in the home directory can be tracked without turning the entire home directory into a normal Git repo.
 
-Hide untracked files from status
+Prevents config status from listing every untracked file in the home directory and keeps output focused on files that are intentionally tracked.
 ```bash
 config config --local status.showUntrackedFiles no
 ```
-This prevents config status from listing every untracked file in the home directory and keeps output focused on files that are intentionally tracked.
 
-Persist the alias
+Adds the alias to the shell startup file so the config command is available in future shell sessions.
 ```bash
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> "$HOME/.bashrc"
 ```
-This adds the alias to the shell startup file so the config command is available in future shell sessions.
 
-Add and commit selected files
-Only explicitly chosen files should be tracked, for example:
+
+Add and commit selected files. Only explicitly chosen files should be tracked.
 ```bash
 config add .bashrc
 config add .gitconfig
