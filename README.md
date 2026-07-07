@@ -71,7 +71,7 @@ Please move or remove them before you can switch branches.
 Aborting
 ```
 
-This is because your $HOME folder might already have some stock configuration files which would be overwritten by Git. The solution is simple: back up the files if you care about them, remove them if you don't care. I provide you with a possible rough shortcut to move all the offending files automatically to a backup folder:
+This is because your $HOME folder might already have some stock configuration files which would be overwritten by Git. The solution is simple: back up the files if you care about them, remove them if you don't care. This provides a possible rough shortcut to move all the offending files automatically to a backup folder:
 
 ```bash
 mkdir -p .config-backup && \
