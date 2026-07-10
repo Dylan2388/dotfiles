@@ -1,6 +1,6 @@
 # By default Reload config with shft + cmd + ,
-# config-file = themes/tokyonight
-theme = Catppuccin Macchiato
+config-file = themes/tokyonight
+# theme = Catppuccin Macchiato
 background-opacity = 0.88
 background-blur-radius = 25
 
