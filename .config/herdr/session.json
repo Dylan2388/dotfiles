@@ -1,0 +1,154 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w1",
+      "custom_name": "fossing",
+      "identity_cwd": "/home/ephahoa",
+      "public_pane_numbers": {
+        "1": 1,
+        "10": 8,
+        "6": 4,
+        "8": 6,
+        "13": 11,
+        "12": 10,
+        "11": 9,
+        "7": 5
+      },
+      "next_public_pane_number": 14,
+      "public_tab_numbers": [
+        8,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "next_public_tab_number": 10,
+      "tabs": [
+        {
+          "custom_name": "bash",
+          "layout": {
+            "Pane": 12
+          },
+          "panes": {
+            "12": {
+              "cwd": "/home/ephahoa"
+            }
+          },
+          "zoomed": false,
+          "focused": 12,
+          "root_pane": 12
+        },
+        {
+          "custom_name": "kiro",
+          "layout": {
+            "Pane": 1
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/ephahoa/tp-sdn/machine-learning/ami-model-training",
+              "label": "kiro"
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": "ami-availability",
+          "layout": {
+            "Pane": 6
+          },
+          "panes": {
+            "6": {
+              "cwd": "/home/ephahoa/tp-sdn",
+              "label": "ami-availability"
+            }
+          },
+          "zoomed": false,
+          "focused": 6,
+          "root_pane": 6
+        },
+        {
+          "custom_name": "ami-link-gain",
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/home/ephahoa/tp-sdn"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        },
+        {
+          "custom_name": "ami-links-classifier",
+          "layout": {
+            "Pane": 8
+          },
+          "panes": {
+            "8": {
+              "cwd": "/home/ephahoa/tp-sdn"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 8
+        },
+        {
+          "custom_name": "sfp-prediction-model",
+          "layout": {
+            "Pane": 10
+          },
+          "panes": {
+            "10": {
+              "cwd": "/home/ephahoa/tp-sdn"
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 10
+        },
+        {
+          "custom_name": "sfp-classification-model",
+          "layout": {
+            "Pane": 11
+          },
+          "panes": {
+            "11": {
+              "cwd": "/home/ephahoa/tp-sdn"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 11
+        },
+        {
+          "custom_name": "ai-agent-service",
+          "layout": {
+            "Pane": 13
+          },
+          "panes": {
+            "13": {
+              "cwd": "/home/ephahoa/tp-sdn/agentic-framework"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        }
+      ],
+      "active_tab": 0
+    }
+  ],
+  "active": 0,
+  "selected": 0,
+  "sidebar_width": 19,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

@@ -1,0 +1,1086 @@
+2026-06-29T12:13:19.137771Z  INFO herdr::api::server: api server listening path=/home/ephahoa/.config/herdr/herdr.sock
+2026-06-29T12:13:19.139864Z  INFO herdr::app: using pane scrollback configuration pane_scrollback_limit_bytes=10000000
+2026-06-29T12:13:19.175926Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=1 rows=24 cols=80 scrollback_limit_bytes=10000000
+2026-06-29T12:13:19.176090Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T12:13:19.178147Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=1 pid=1942516
+2026-06-29T12:13:19.178418Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w1" pane_id=1
+2026-06-29T12:13:19.178429Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-06-29T12:13:19.178440Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-29T12:13:19.178445Z  INFO herdr::server::headless: created startup workspace cwd=/home/ephahoa
+2026-06-29T12:13:19.178489Z  INFO herdr::server::headless: client protocol socket listening path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-06-29T12:13:19.178509Z  INFO herdr::server::headless: herdr server started api_socket=/home/ephahoa/.config/herdr/herdr.sock client_socket=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-06-29T12:13:19.178521Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="server" outcome="started" pid=1942503
+2026-06-29T12:13:19.431940Z  INFO herdr::server::headless: client connected client_id=2 cols=186 rows=92 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-06-29T12:13:24.180427Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:13:38.438510Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:42:45.226573Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(1948276)
+2026-06-29T12:43:19.177580Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T12:43:56.869577Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=2 rows=45 cols=77 scrollback_limit_bytes=10000000
+2026-06-29T12:43:56.872624Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=2 pid=1948610
+2026-06-29T12:44:01.874986Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:44:12.501766Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:44:54.423580Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:45:01.843296Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:45:12.172427Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=3 rows=91 cols=154 scrollback_limit_bytes=10000000
+2026-06-29T12:45:12.175750Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=3 pid=1948958
+2026-06-29T12:45:12.176310Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-06-29T12:45:12.176354Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2" pane_id=3
+2026-06-29T12:45:12.742227Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=2 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-06-29T12:45:12.749124Z  INFO herdr::pane: pane session terminated pane=2 pid=1948610 signal=Hangup
+2026-06-29T12:45:12.749894Z  WARN herdr::app::actions: PaneDied for unknown pane pane=2
+2026-06-29T12:45:17.193892Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:45:31.234750Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-29T12:45:36.237344Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:45:37.246282Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-06-29T12:45:39.386781Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-06-29T12:45:44.390009Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-06-29T12:45:47.869521Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:45:53.046046Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Kiro) agent=None pgid=Some(1942516)
+2026-06-29T13:13:19.179548Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T13:43:19.180409Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T14:13:19.181561Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T14:43:19.182167Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T15:08:42.144838Z  INFO herdr::server::headless: client resize client_id=2 cols=80 rows=22 cell_width_px=0 cell_height_px=0
+2026-06-29T15:08:42.746157Z  INFO herdr::server::headless: client resize client_id=2 cols=186 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:09:13.814656Z  INFO herdr::server::headless: client resize client_id=2 cols=80 rows=22 cell_width_px=0 cell_height_px=0
+2026-06-29T15:09:15.017100Z  INFO herdr::server::headless: client resize client_id=2 cols=186 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:10:08.519615Z  INFO herdr::server::headless: client resize client_id=2 cols=162 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:10:08.620018Z  INFO herdr::server::headless: client resize client_id=2 cols=143 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:10:08.720171Z  INFO herdr::server::headless: client resize client_id=2 cols=111 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:10:08.820369Z  INFO herdr::server::headless: client resize client_id=2 cols=104 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:10:08.920644Z  INFO herdr::server::headless: client resize client_id=2 cols=103 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:13:19.183815Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T15:22:18.271543Z  INFO herdr::server::headless: client resize client_id=2 cols=80 rows=22 cell_width_px=0 cell_height_px=0
+2026-06-29T15:22:21.777770Z  INFO herdr::server::headless: client resize client_id=2 cols=186 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:22:29.392218Z  INFO herdr::server::headless: client resize client_id=2 cols=182 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:22:29.492386Z  INFO herdr::server::headless: client resize client_id=2 cols=142 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:22:29.592908Z  INFO herdr::server::headless: client resize client_id=2 cols=115 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:22:29.693120Z  INFO herdr::server::headless: client resize client_id=2 cols=112 rows=92 cell_width_px=0 cell_height_px=0
+2026-06-29T15:27:34.620631Z  INFO herdr::server::headless: client disconnected client_id=2
+2026-06-29T15:43:19.185606Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T16:13:19.186509Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T16:43:19.187425Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T17:13:19.189129Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T17:43:19.190947Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T18:13:19.192278Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T18:43:19.193579Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T19:13:19.195345Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T19:43:19.196368Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T20:13:19.197232Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T20:43:19.198692Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T21:13:19.200713Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T21:43:19.202960Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T22:13:19.204659Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T22:43:19.204973Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T23:13:19.206005Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-29T23:43:19.207163Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T00:13:19.208610Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T00:43:19.209940Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T01:13:19.211018Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T01:43:19.212309Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T02:13:19.214113Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T02:43:19.215944Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T03:13:19.216320Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T03:43:19.217066Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T04:13:19.218323Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T04:43:19.219821Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T05:13:19.221126Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T05:43:19.223305Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T06:13:19.224074Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T06:43:19.225888Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T07:13:19.227088Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T07:43:19.228333Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T08:13:19.228989Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T08:43:19.229816Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T09:13:19.231796Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T09:43:19.233258Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T10:13:19.234380Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T10:43:19.235862Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T11:13:19.237472Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T11:43:19.238730Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T12:13:19.240505Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T12:43:19.241803Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T13:13:19.243563Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T13:43:19.245033Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T14:13:19.246626Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T14:43:19.248293Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T15:13:19.249526Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T15:43:19.250074Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T16:13:19.251588Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T16:43:19.252593Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T17:13:19.253718Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T17:43:19.255097Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T18:13:19.256481Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T18:43:19.257353Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T19:13:19.258397Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T19:43:19.259186Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T20:13:19.260579Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T20:43:19.261595Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T21:13:19.263929Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T21:43:19.265647Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T22:13:19.267554Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T22:43:19.268594Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T23:13:19.269859Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-06-30T23:43:19.271145Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T00:13:19.272294Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T00:43:19.273517Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T01:13:19.274756Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T01:43:19.276784Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T02:13:19.278568Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T02:43:19.279191Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T03:13:19.280793Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T03:43:19.282728Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T04:13:19.284813Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T04:43:19.286645Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T05:13:19.287213Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T05:43:19.288833Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T06:13:19.290661Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T06:43:19.292934Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T07:13:19.294959Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T07:43:19.296789Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T08:13:19.298553Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T08:43:19.301742Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T09:13:19.302134Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T09:43:19.303662Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T10:13:19.304617Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T10:43:19.305190Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T11:13:19.306932Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T11:43:19.308207Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T12:13:19.309834Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T12:43:19.311972Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T12:49:49.932067Z  INFO herdr::server::headless: client connected client_id=4 cols=132 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-01T12:49:57.051800Z  INFO herdr::server::headless: client resize client_id=4 cols=133 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:57.152013Z  INFO herdr::server::headless: client resize client_id=4 cols=144 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:57.252202Z  INFO herdr::server::headless: client resize client_id=4 cols=167 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:57.352491Z  INFO herdr::server::headless: client resize client_id=4 cols=184 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:57.452509Z  INFO herdr::server::headless: client resize client_id=4 cols=186 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:58.021024Z  INFO herdr::server::headless: client resize client_id=4 cols=187 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:58.030824Z  INFO herdr::server::headless: client resize client_id=4 cols=198 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:49:58.036765Z  INFO herdr::server::headless: client resize client_id=4 cols=204 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:52:19.116579Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(2290791)
+2026-07-01T12:52:25.807832Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Kiro) agent=None pgid=Some(1942516)
+2026-07-01T12:52:48.440173Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=4 rows=73 cols=172 scrollback_limit_bytes=10000000
+2026-07-01T12:52:48.443065Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=4 pid=2294403
+2026-07-01T12:52:48.444155Z  INFO herdr::logging: workspace created event="workspace.create" subsystem="workspace" outcome="ok" workspace_id="w2" pane_id=4
+2026-07-01T12:52:48.444170Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:52:48.444185Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:52:51.391482Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:52:51.391590Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:52:52.123526Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:52:52.123633Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:52:53.340670Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:52:53.340726Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:52:58.356920Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:53:39.501185Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:53:41.348355Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:53:44.839124Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:53:44.839261Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:53:45.684999Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:53:45.685076Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:53:47.452836Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:53:48.304676Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:53:52.457107Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:53:57.472298Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:54:10.289157Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T12:54:14.630104Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(2295472)
+2026-07-01T12:55:03.952083Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:55:08.969078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:55:40.681636Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:55:45.698667Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:55:46.768940Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:55:47.998891Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:55:49.048695Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:55:50.021823Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:55:52.515817Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:55:57.543788Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:56:45.081097Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:56:45.081218Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:56:45.961031Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:56:45.961094Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:56:46.516424Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:56:46.516505Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:56:51.518535Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:57:39.865690Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:57:44.867962Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:57:57.503592Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:57:57.503684Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:58:02.507413Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:58:05.591439Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T12:58:05.591524Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:58:09.615528Z  INFO herdr::logging: workspace focused event="workspace.focus" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:58:09.615633Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t1"
+2026-07-01T12:58:14.618029Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:58:46.129696Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=5 rows=73 cols=172 scrollback_limit_bytes=10000000
+2026-07-01T12:58:46.133653Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=5 pid=2296985
+2026-07-01T12:58:46.134592Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2"
+2026-07-01T12:58:46.134685Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w2" tab_id="w2:t2" pane_id=5
+2026-07-01T12:58:51.152843Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=2
+2026-07-01T12:58:56.782009Z  INFO herdr::logging: workspace closed event="workspace.close" subsystem="workspace" outcome="ok" workspace_id="w2"
+2026-07-01T12:59:01.013115Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:59:02.677779Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:59:03.947900Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T12:59:08.964061Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T12:59:22.934506Z  INFO herdr::server::headless: client resize client_id=4 cols=54 rows=17 cell_width_px=0 cell_height_px=0
+2026-07-01T12:59:23.836266Z  INFO herdr::server::headless: client resize client_id=4 cols=132 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:59:30.349100Z  INFO herdr::server::headless: client resize client_id=4 cols=170 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:59:30.449309Z  INFO herdr::server::headless: client resize client_id=4 cols=190 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T12:59:34.850007Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T12:59:39.852755Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:00:39.431700Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:00:44.434603Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:00:47.192325Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:01:15.535718Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:01:18.550029Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:01:23.553043Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:01:30.076835Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:01:35.079612Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:01:43.338627Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=4 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-01T13:01:43.344011Z  INFO herdr::pane: pane session terminated pane=4 pid=2294403 signal=Hangup
+2026-07-01T13:01:43.345814Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=5 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-01T13:01:43.348844Z  INFO herdr::pane: pane session terminated pane=5 pid=2296985 signal=Hangup
+2026-07-01T13:01:43.349229Z  WARN herdr::app::actions: PaneDied for unknown pane pane=4
+2026-07-01T13:01:43.349244Z  WARN herdr::app::actions: PaneDied for unknown pane pane=5
+2026-07-01T13:01:56.191126Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:02:01.194627Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:02:01.952758Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:02:03.470284Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:02:08.472246Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:02:30.743523Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:02:32.376916Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:02:37.379260Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:02:38.483759Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:02:39.613387Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:02:44.616719Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:02:59.771621Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:03:01.986866Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:03:06.990138Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:04:41.387872Z  INFO herdr::server::headless: client resize client_id=4 cols=187 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T13:04:41.488053Z  INFO herdr::server::headless: client resize client_id=4 cols=156 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T13:04:41.588210Z  INFO herdr::server::headless: client resize client_id=4 cols=142 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-01T13:06:24.840097Z  INFO herdr::pane: agent changed pane=3 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(2298755)
+2026-07-01T13:06:55.868040Z  INFO herdr::pane: agent changed pane=3 previous_agent=Some(Kiro) agent=None pgid=Some(2298755)
+2026-07-01T13:07:56.106911Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:07:58.356745Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:08:03.376084Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:09:14.930335Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:09:52.716425Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:09:57.736683Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:10:40.760286Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=6 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:10:40.764976Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=6 pid=2304479
+2026-07-01T13:10:40.765809Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:10:40.765853Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3" pane_id=6
+2026-07-01T13:10:45.781472Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:12:44.449926Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:12:49.467843Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:12:58.882596Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:13:03.887416Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:13:19.312913Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T13:13:19.427006Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T13:13:41.497744Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:13:46.502235Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:15:34.746621Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:15:36.863802Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:15:41.886432Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:16:37.545266Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:16:54.682417Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=7 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:16:54.687465Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=7 pid=2316485
+2026-07-01T13:16:54.688450Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T13:16:54.688541Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4" pane_id=7
+2026-07-01T13:16:59.713311Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:17:29.699232Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=8 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:17:29.703707Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=8 pid=2317032
+2026-07-01T13:17:29.704467Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T13:17:29.704542Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5" pane_id=8
+2026-07-01T13:17:34.718722Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:17:53.034813Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=9 rows=36 cols=55 scrollback_limit_bytes=10000000
+2026-07-01T13:17:53.038851Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=9 pid=2317787
+2026-07-01T13:17:58.042590Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:18:14.238778Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:18:22.292679Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=10 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:18:22.296318Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=10 pid=2318650
+2026-07-01T13:18:22.296969Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T13:18:22.297008Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6" pane_id=10
+2026-07-01T13:18:22.861071Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=9 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-01T13:18:22.868819Z  INFO herdr::pane: pane session terminated pane=9 pid=2317787 signal=Hangup
+2026-07-01T13:18:22.869191Z  WARN herdr::app::actions: PaneDied for unknown pane pane=9
+2026-07-01T13:18:27.311418Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:20:46.735609Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=11 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:20:46.741335Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=11 pid=2320413
+2026-07-01T13:20:46.742365Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T13:20:46.742440Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7" pane_id=11
+2026-07-01T13:20:48.054480Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T13:20:50.430944Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T13:20:55.435807Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:21:11.504393Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:21:14.554867Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t2"
+2026-07-01T13:21:22.006770Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:21:27.029734Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:21:39.256253Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:21:40.721047Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T13:21:42.579995Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:21:47.604954Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:21:56.377683Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:22:01.055139Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:22:02.303346Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:22:07.325827Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:22:18.346276Z  INFO herdr::server::headless: client detach requested via keybind client_id=4
+2026-07-01T13:22:18.350169Z  INFO herdr::server::headless: client disconnected client_id=4
+2026-07-01T13:22:36.992759Z  INFO herdr::server::headless: client connected client_id=6 cols=142 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-01T13:22:48.813269Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:23:09.610283Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:23:14.633708Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:23:25.196477Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:24:30.342700Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:24:32.625774Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:24:37.648536Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:24:42.909137Z  INFO herdr::logging: tab renamed event="tab.rename" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:24:47.911535Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:24:58.249330Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=12 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:24:58.255023Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=12 pid=2322701
+2026-07-01T13:24:58.255877Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T13:24:58.256177Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8" pane_id=12
+2026-07-01T13:24:58.821314Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=3 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-01T13:24:58.828104Z  INFO herdr::pane: pane session terminated pane=3 pid=1948958 signal=Hangup
+2026-07-01T13:24:58.829880Z  WARN herdr::app::actions: PaneDied for unknown pane pane=3
+2026-07-01T13:25:03.282768Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:25:12.613310Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T13:25:17.617676Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:25:29.384320Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T13:25:34.388849Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:28:41.076513Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=13 rows=73 cols=110 scrollback_limit_bytes=10000000
+2026-07-01T13:28:41.081575Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=13 pid=2324512
+2026-07-01T13:28:41.082740Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T13:28:41.082838Z  INFO herdr::logging: tab created event="tab.create" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9" pane_id=13
+2026-07-01T13:28:46.097779Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:29:07.328822Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T13:29:12.332555Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:35:07.534022Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T13:35:12.540318Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:36:05.427165Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T13:36:07.109697Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:36:12.112647Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:36:40.759749Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:36:45.761514Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:43:19.315064Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T13:46:03.701192Z  INFO herdr::server::headless: client connected client_id=8 cols=375 rows=92 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-01T13:46:07.568729Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T13:46:09.318691Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T13:46:10.896260Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T13:46:12.287354Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T13:46:14.102480Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T13:46:18.076416Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T13:46:20.662670Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T13:46:25.675347Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T13:47:18.367399Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-01T13:47:22.500107Z  INFO herdr::server::headless: client disconnected client_id=8
+2026-07-01T13:56:23.745384Z  INFO herdr::server::headless: client disconnected client_id=6
+2026-07-01T14:13:19.316868Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T14:43:19.318058Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T15:13:19.319088Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T15:20:59.423433Z  INFO herdr::server::headless: client connected client_id=10 cols=193 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-01T15:21:05.640541Z  INFO herdr::server::headless: client resize client_id=10 cols=178 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-01T15:21:05.740654Z  INFO herdr::server::headless: client resize client_id=10 cols=147 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-01T15:25:25.745149Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:25:30.768197Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:25:42.808507Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:25:47.831717Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:25:55.600112Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:26:00.607731Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:26:07.664385Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:26:12.671464Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:26:36.667119Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:26:40.206375Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:26:45.213138Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:26:52.701508Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:26:57.706549Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:27:18.020121Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:27:23.042571Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:31:19.973453Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:31:24.986503Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:31:31.418873Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:31:35.301493Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:31:40.306683Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:31:57.864628Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:32:02.871962Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:32:14.376053Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:32:19.382436Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:32:38.035457Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:32:40.471356Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T15:32:45.495303Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:33:38.500691Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:33:42.358344Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:33:47.382489Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:33:50.383593Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:33:52.067257Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:33:57.069973Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:33:57.622005Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:34:02.629741Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:34:02.785789Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:34:07.730650Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T15:34:10.319313Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T15:34:11.809535Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:34:16.826440Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:34:49.540997Z  INFO herdr::logging: workspace renamed event="workspace.rename" subsystem="workspace" outcome="ok" workspace_id="w1"
+2026-07-01T15:34:54.542423Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:34:55.369534Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T15:34:58.358547Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T15:35:05.021471Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T15:35:06.082194Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T15:35:07.368766Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-01T15:35:12.373354Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:35:37.202475Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:35:42.222799Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:35:43.400197Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T15:37:06.414369Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:37:07.974758Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:37:09.321928Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-01T15:37:10.797487Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:37:15.818876Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:38:34.038743Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:38:36.543084Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:38:41.555505Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:38:42.008321Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T15:39:03.602668Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T15:39:13.487316Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:39:18.265431Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T15:39:18.500098Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:39:28.451339Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T15:39:29.771042Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:39:30.591318Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:39:32.048090Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:39:37.060328Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:39:43.325906Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:39:46.513800Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-01T15:39:48.339841Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:40:32.376541Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:40:37.399812Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:40:43.040943Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:40:44.763704Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:40:46.721944Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:40:49.387526Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:40:54.392186Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:40:57.546602Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:41:00.042090Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T15:41:05.064053Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:41:07.753697Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:41:11.359346Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T15:41:16.375939Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:41:16.575034Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T15:41:18.549986Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:41:21.689345Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:41:25.407602Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:41:30.432225Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:41:32.416921Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:41:37.438868Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:41:41.331467Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T15:41:46.355477Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T15:43:19.320064Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T15:45:09.573276Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T15:45:14.597409Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T16:13:19.321912Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T16:43:19.323397Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T17:13:19.324080Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T17:43:19.324977Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T18:13:19.326728Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T18:43:19.328978Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T19:13:19.331026Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T19:41:54.190370Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T19:41:57.261857Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:42:02.288117Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:42:05.244251Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:42:10.258333Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:42:11.232709Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:42:16.245049Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:42:44.240110Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:42:49.252002Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:43:19.331945Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T19:44:15.647260Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:44:17.616454Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:44:22.626755Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:44:48.662625Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:44:50.012881Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:44:55.029833Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:45:04.302377Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:45:07.250607Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:45:12.263745Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:49:36.850426Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T19:49:39.174298Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T19:49:44.191928Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:55:16.948127Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:55:21.967004Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:55:44.126200Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:55:49.144727Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:55:55.307873Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T19:55:58.677661Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:56:01.743923Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:56:06.762107Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:56:11.794315Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T19:56:15.187942Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T19:56:20.202498Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:56:20.595710Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T19:56:22.966504Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:56:27.997051Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:56:49.085306Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:56:54.095570Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:56:56.819207Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:57:01.839078Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:57:03.958446Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T19:57:08.973919Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:57:09.097880Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T19:57:14.113649Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:58:19.529534Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T19:58:21.307550Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T19:58:24.850663Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T19:58:29.864510Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:58:30.099782Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T19:58:35.117331Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:58:35.748619Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T19:58:40.764263Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T19:58:41.467387Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T19:58:46.475733Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:04:19.531809Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T20:04:21.344929Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T20:04:26.375979Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:04:28.183059Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T20:04:32.292870Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T20:04:36.748815Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T20:04:41.759541Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:04:43.345364Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T20:04:48.356574Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:11:10.203818Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T20:11:12.022509Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-01T20:11:17.050266Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:13:09.986018Z  INFO herdr::pane: agent changed pane=6 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(2383432)
+2026-07-01T20:13:10.612191Z  INFO herdr::pane: agent changed pane=6 previous_agent=Some(Kiro) agent=None pgid=Some(2304479)
+2026-07-01T20:13:19.333219Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T20:13:26.883145Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-01T20:13:31.911865Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:14:03.812331Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-01T20:14:08.833947Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:14:47.427178Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-01T20:14:52.448074Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:16:29.335383Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-01T20:16:34.354029Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:21:21.551999Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-01T20:21:26.575962Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-01T20:43:19.334798Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T21:13:19.337903Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T21:43:19.339828Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T22:13:19.341935Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T22:43:19.343504Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T23:13:19.344371Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-01T23:43:19.345737Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T00:13:19.347298Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T00:39:17.297552Z  INFO herdr::server::headless: client disconnected client_id=10
+2026-07-02T00:43:19.350142Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T01:13:19.350328Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T01:43:19.351336Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T02:13:19.352787Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T02:43:19.354512Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T03:13:19.355290Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T03:43:19.356964Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T04:13:19.358114Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T04:43:19.359288Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T05:13:19.360866Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T05:43:19.362232Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T06:13:19.364212Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T06:43:19.366038Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T07:13:19.367880Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T07:43:19.369833Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T08:13:19.371632Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T08:43:19.373360Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T09:13:19.374859Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T09:43:19.376922Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T10:13:19.378360Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T10:17:33.552567Z  INFO herdr::server::headless: client connected client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=SemanticFrame
+2026-07-02T10:17:37.202848Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-02T10:17:42.217939Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:17:49.087281Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-02T10:17:54.109104Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:33:58.910991Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-02T10:34:03.938769Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:43:19.379512Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T10:43:52.922747Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-02T10:43:54.984461Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-02T10:43:57.678757Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-02T10:44:02.705225Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:50:38.706186Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-02T10:50:40.187621Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-02T10:50:43.620089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-02T10:50:48.639337Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:53:15.197373Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-02T10:53:17.610458Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-02T10:53:20.485272Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-02T10:53:25.505031Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T10:57:02.199810Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-02T10:57:07.216623Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T11:13:19.380415Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T11:43:19.380883Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T11:52:21.428345Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-02T11:52:26.038744Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-02T11:52:30.514326Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-02T11:52:34.216111Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-02T11:52:39.232836Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T11:52:42.278134Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-02T11:52:46.396804Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-02T11:52:51.414696Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T11:58:48.839639Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-02T11:58:51.861216Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-02T11:58:54.534642Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-02T11:58:59.564964Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T11:58:59.606913Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-02T11:59:04.647318Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T12:08:46.311412Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-02T12:08:47.611047Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-02T12:08:50.715462Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-02T12:08:52.649696Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-02T12:08:54.131938Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-02T12:08:55.255414Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-02T12:08:59.941104Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-02T12:09:04.957678Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-02T12:13:19.382760Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T12:43:19.384942Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T13:13:19.386343Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T13:43:19.387965Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T14:13:19.389594Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T14:22:20.035534Z  INFO herdr::server::headless: client resize client_id=12 cols=54 rows=19 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:20.536563Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:21.037606Z  INFO herdr::server::headless: client resize client_id=12 cols=54 rows=19 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:21.639218Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:23.543025Z  INFO herdr::server::headless: client resize client_id=12 cols=54 rows=19 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:24.344560Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:26.248782Z  INFO herdr::server::headless: client resize client_id=12 cols=54 rows=19 cell_width_px=0 cell_height_px=0
+2026-07-02T14:22:27.150638Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-02T14:31:04.836878Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-02T14:31:04.937209Z  INFO herdr::server::headless: client resize client_id=12 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-02T14:31:05.834924Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-02T14:37:27.283950Z  INFO herdr::server::headless: client disconnected client_id=12
+2026-07-02T14:43:19.390713Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T15:13:19.392127Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T15:43:19.393334Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T16:13:19.394452Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T16:43:19.395376Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T17:13:19.396199Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T17:43:19.397616Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T18:13:19.398878Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T18:43:19.401039Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T19:13:19.403096Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T19:43:19.404564Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T20:13:19.405288Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T20:43:19.406251Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T21:13:19.408090Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T21:43:19.409560Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T22:13:19.411330Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T22:43:19.412155Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T23:13:19.413401Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-02T23:43:19.414143Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T00:13:19.415271Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T00:43:19.416214Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T01:13:19.417841Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T01:43:19.419159Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T02:13:19.420809Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T02:43:19.422572Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T03:13:19.423816Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T03:43:19.425581Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T04:13:19.427358Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T04:43:19.429075Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T05:13:19.430385Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T05:43:19.431726Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T06:13:19.433821Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T06:43:19.435606Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T07:13:19.436270Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T07:43:19.437353Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T07:45:01.588747Z  INFO herdr::server::headless: client connected client_id=14 cols=151 rows=42 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-03T08:13:19.440359Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T08:43:19.440991Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T09:13:19.442372Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T09:43:19.443064Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T10:13:19.444513Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T10:43:19.445545Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T11:13:19.446342Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T11:43:19.447103Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T12:13:19.448237Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T12:43:19.449061Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T13:05:42.965014Z  INFO herdr::server::headless: client disconnected client_id=14
+2026-07-03T13:13:19.450149Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T13:43:19.451183Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T14:13:19.451917Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T14:43:19.453098Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T15:13:19.455554Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T15:43:19.454667Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T16:13:19.457005Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T16:43:19.459066Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T17:13:19.460097Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T17:43:19.461746Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T18:13:19.463249Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T18:43:19.464356Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T19:13:19.465070Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T19:43:19.466814Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T20:13:19.468196Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T20:43:19.469598Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T21:13:19.470832Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T21:43:19.473809Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T22:13:19.474536Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T22:43:19.476120Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T23:13:19.477122Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-03T23:43:19.478336Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T00:13:19.479990Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T00:43:19.481980Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T01:13:19.483783Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T01:43:19.485591Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T02:13:19.486586Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T02:43:19.488033Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T03:13:19.489427Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T03:43:19.490021Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T04:13:19.491459Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T04:43:19.492445Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T05:13:19.493811Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T05:43:19.495172Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T06:13:19.496454Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T06:43:19.497448Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T07:13:19.498681Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T07:43:19.501160Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T08:13:19.502589Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T08:43:19.504097Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T09:13:19.507380Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T09:43:19.508658Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T10:13:19.510446Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T10:43:19.511332Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T11:13:19.512686Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T11:43:19.514531Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T12:13:19.516580Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T12:43:19.517716Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T13:13:19.519359Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T13:43:19.520825Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T14:13:19.522793Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T14:43:19.523546Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T15:13:19.525757Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T15:43:19.526781Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T16:13:19.528348Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T16:43:19.529373Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T17:13:19.531018Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T17:43:19.532247Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T18:13:19.533227Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T18:43:19.534064Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T19:13:19.535780Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T19:43:19.537472Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T20:13:19.538282Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T20:43:19.539485Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T21:13:19.540868Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T21:43:19.542400Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T22:13:19.544239Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T22:43:19.545059Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T23:13:19.546277Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-04T23:43:19.548067Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T00:13:19.549842Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T00:43:19.551484Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T01:13:19.552996Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T01:43:19.554752Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T02:13:19.556969Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T02:43:19.558217Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T03:13:19.559790Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T03:43:19.561290Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T04:13:19.562259Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T04:43:19.563419Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T05:13:19.564302Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T05:43:19.565655Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T06:13:19.566311Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T06:43:19.567015Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T07:13:19.568408Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T07:43:19.569469Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T08:13:19.570538Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T08:43:19.571779Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T09:13:19.573550Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T09:43:19.574637Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T10:13:19.575728Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T10:43:19.577195Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T11:13:19.579180Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T11:43:19.580762Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T12:13:19.582216Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T12:43:19.583920Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T13:13:19.585261Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T13:43:19.586954Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T14:13:19.588380Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T14:43:19.588926Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T15:13:19.590753Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T15:43:19.592123Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T16:13:19.593411Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T16:43:19.594174Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T17:13:19.595440Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T17:43:19.596809Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T18:13:19.598955Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T18:43:19.600315Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T19:13:19.601635Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T19:43:19.603139Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T20:13:19.604528Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T20:43:19.605258Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T21:13:19.606390Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T21:43:19.607502Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T22:13:19.608776Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T22:43:19.610588Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T23:13:19.612741Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-05T23:43:19.612998Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T00:13:19.614567Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T00:43:19.615975Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T01:13:19.617351Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T01:43:19.618870Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T02:13:19.620576Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T02:43:19.622128Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T03:13:19.623571Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T03:43:19.625353Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T04:13:19.626089Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T04:43:19.629315Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T05:13:19.628377Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T05:43:19.629771Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T06:13:19.631508Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T06:43:19.632435Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T07:13:19.633281Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T07:43:19.634684Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T08:13:19.636872Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T08:43:19.638595Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T09:13:19.639989Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T09:43:19.641195Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T10:13:19.642786Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T10:43:19.644116Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T11:13:19.645596Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T11:43:19.646909Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T12:13:19.648686Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T12:43:19.649284Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T13:13:19.650165Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T13:43:19.651965Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T14:13:19.653314Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T14:43:19.654902Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T15:13:19.656310Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T15:43:19.657578Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T16:13:19.658289Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T16:43:19.659702Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T17:13:19.660989Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T17:43:19.661987Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T18:13:19.663130Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T18:43:19.664860Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T19:13:19.666727Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T19:43:19.669240Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T20:13:19.670220Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T20:43:19.671369Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T21:13:19.672787Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T21:43:19.674416Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T22:13:19.675738Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T22:43:19.677135Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T23:13:19.678429Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-06T23:43:19.679835Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T00:13:19.681170Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T00:43:19.682596Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T01:13:19.684820Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T01:43:19.686118Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T02:13:19.686211Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T02:43:19.687526Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T03:13:19.688990Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T03:43:19.690629Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T04:13:19.692933Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T04:43:19.694579Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T05:13:19.696620Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T05:43:19.697497Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T06:13:19.698199Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T06:43:19.699291Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T07:13:19.700941Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T07:43:19.702179Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T08:13:19.703441Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T08:43:19.704861Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T09:13:19.705930Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T09:43:19.707584Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T10:13:19.709892Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T10:43:11.545879Z  INFO herdr::server::headless: client connected client_id=16 cols=132 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-07T10:43:19.711399Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T10:45:51.226547Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-07T10:45:52.375140Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:45:57.397470Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:48:31.305332Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:48:36.334468Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:51:03.273572Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:51:08.303601Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:51:51.510263Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:51:56.541288Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:52:01.571874Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:52:03.146486Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:52:08.177954Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:52:08.633343Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-07T10:52:12.715652Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-07T10:52:15.617940Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:52:19.060880Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:52:22.221328Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:52:25.000089Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-07T10:52:27.276250Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-07T10:52:30.653071Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:52:35.671396Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:53:38.690150Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:53:43.720887Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:54:02.744837Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:54:07.536780Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:54:12.567707Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:54:18.986372Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:54:24.021766Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:54:24.514871Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T10:54:26.030700Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:54:31.062630Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:55:04.628672Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-07T10:55:09.656283Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:55:42.192622Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-07T10:55:47.219211Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:56:40.863116Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T10:56:45.892499Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T10:56:50.734776Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-07T10:56:54.085923Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-07T10:56:55.859794Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-07T10:56:57.503191Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-07T10:57:02.526626Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T11:13:15.429986Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-07T11:13:19.711770Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T11:13:20.461315Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T11:22:02.658846Z  INFO herdr::app::actions: copied double-clicked token to clipboard
+2026-07-07T11:24:41.100029Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:24:58.440982Z  INFO herdr::server::headless: client resize client_id=16 cols=54 rows=17 cell_width_px=0 cell_height_px=0
+2026-07-07T11:24:59.128258Z  INFO herdr::server::headless: client resize client_id=16 cols=132 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-07T11:25:03.753911Z  INFO herdr::app::actions: copied double-clicked token to clipboard
+2026-07-07T11:25:56.754349Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:27:23.147592Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:28:25.262589Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:31:09.257421Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:31:22.277916Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:31:42.129051Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:32:07.229235Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:32:49.315587Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:34:31.600343Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:35:04.553872Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:35:17.828491Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:38:36.677314Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-07T11:38:38.952515Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T11:38:43.976625Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T11:38:47.037255Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:38:51.682755Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:38:59.684055Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:39:16.838218Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-07T11:43:19.713298Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T12:13:19.714787Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T12:43:19.716541Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T13:13:19.717169Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T13:43:19.717902Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T14:13:06.173701Z  INFO herdr::server::headless: client disconnected client_id=16
+2026-07-07T14:13:19.719032Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T14:43:19.720645Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T15:13:19.722547Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T15:43:19.724412Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T16:13:19.725309Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T16:43:19.726821Z  INFO herdr::logging: checking for updates event="update.check.start" subsystem="update" outcome="started"
+2026-07-07T16:43:19.880052Z  INFO herdr::logging: update available event="update.available" subsystem="update" outcome="ok" version="0.7.2"
+2026-07-07T16:43:19.880111Z  INFO herdr::update: new stable build available at https://github.com/ogulcancelik/herdr/releases/download/v0.7.2/herdr-linux-x86_64
+2026-07-07T16:43:19.880466Z  INFO herdr::update: auto-update check: 0.7.2 available, waiting for explicit install
+2026-07-07T17:07:55.629760Z  INFO herdr::server::headless: client connected client_id=18 cols=114 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-07T17:09:18.266051Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=14 rows=37 cols=41 scrollback_limit_bytes=10000000
+2026-07-07T17:09:18.274711Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=14 pid=2852493
+2026-07-07T17:09:23.289801Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T17:09:27.097348Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T17:09:29.571231Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T17:09:31.714340Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T17:09:32.958834Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-07T17:09:37.979784Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T17:09:44.382505Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-07T17:13:22.069336Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=14 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-07T17:13:22.078262Z  INFO herdr::pane: pane session terminated pane=14 pid=2852493 signal=Hangup
+2026-07-07T17:13:22.078592Z  WARN herdr::app::actions: PaneDied for unknown pane pane=14
+2026-07-07T19:01:45.852402Z  INFO herdr::server::headless: client disconnected client_id=18
+2026-07-08T09:54:11.679487Z  INFO herdr::server::headless: client connected client_id=20 cols=132 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-08T09:54:20.115604Z  INFO herdr::server::headless: client resize client_id=20 cols=150 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-08T09:54:20.313440Z  INFO herdr::server::headless: client resize client_id=20 cols=152 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-08T09:54:20.417097Z  INFO herdr::server::headless: client resize client_id=20 cols=153 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-08T09:54:22.812098Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-08T09:54:29.372355Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-08T09:54:31.701944Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:54:33.064774Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-08T09:54:34.784257Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-08T09:54:36.280073Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t3"
+2026-07-08T09:54:37.247149Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t4"
+2026-07-08T09:54:40.437621Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t5"
+2026-07-08T09:54:41.694164Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t6"
+2026-07-08T09:54:46.725904Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-08T09:55:10.583769Z  INFO herdr::logging: spawning pane terminal event="pane.spawn.start" subsystem="pane" outcome="started" pane_id=15 rows=37 cols=67 scrollback_limit_bytes=10000000
+2026-07-08T09:55:10.591213Z  INFO herdr::logging: pane child spawned event="pane.spawned" subsystem="pane" outcome="ok" pane_id=15 pid=2925204
+2026-07-08T09:55:18.051929Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-08T09:55:21.813823Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t7"
+2026-07-08T09:55:22.878779Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-08T09:55:27.908814Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-08T10:05:38.994616Z  INFO herdr::server::headless: client resize client_id=20 cols=132 rows=75 cell_width_px=0 cell_height_px=0
+2026-07-08T10:10:11.935291Z  INFO herdr::server::headless: client resize client_id=20 cols=132 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:15.771116Z  INFO herdr::server::headless: client resize client_id=20 cols=133 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:16.488233Z  INFO herdr::server::headless: client resize client_id=20 cols=131 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.076771Z  INFO herdr::server::headless: client resize client_id=20 cols=141 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.173280Z  INFO herdr::server::headless: client resize client_id=20 cols=143 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.297258Z  INFO herdr::server::headless: client resize client_id=20 cols=145 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.573398Z  INFO herdr::server::headless: client resize client_id=20 cols=146 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.685012Z  INFO herdr::server::headless: client resize client_id=20 cols=150 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.773206Z  INFO herdr::server::headless: client resize client_id=20 cols=154 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:17.873145Z  INFO herdr::server::headless: client resize client_id=20 cols=155 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T10:13:21.885265Z  INFO herdr::logging: pane child exited event="pane.exit" subsystem="pane" outcome="completed" pane_id=15 status="ExitStatus { code: 1, signal: Some(\"Hangup\") }"
+2026-07-08T10:13:21.894641Z  INFO herdr::pane: pane session terminated pane=15 pid=2925204 signal=Hangup
+2026-07-08T10:13:21.895124Z  WARN herdr::app::actions: PaneDied for unknown pane pane=15
+2026-07-08T10:21:03.987043Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T11:44:03.165108Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T12:18:31.830239Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T12:23:08.620258Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T12:29:18.961814Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-08T12:33:32.313531Z  INFO herdr::server::headless: client resize client_id=20 cols=132 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-08T15:48:41.523708Z  INFO herdr::server::headless: client disconnected client_id=20
+2026-07-09T06:31:45.589655Z  INFO herdr::server::headless: client connected client_id=22 cols=172 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-09T06:36:04.920607Z  INFO herdr::server::headless: client disconnected client_id=22
+2026-07-09T06:36:53.297216Z  INFO herdr::server::headless: client connected client_id=24 cols=122 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-09T06:38:30.319651Z  INFO herdr::server::headless: client resize client_id=24 cols=122 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:56.245637Z  INFO herdr::server::headless: client resize client_id=24 cols=130 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:56.354420Z  INFO herdr::server::headless: client resize client_id=24 cols=138 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:56.746121Z  INFO herdr::server::headless: client resize client_id=24 cols=131 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:56.851080Z  INFO herdr::server::headless: client resize client_id=24 cols=130 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:56.946095Z  INFO herdr::server::headless: client resize client_id=24 cols=129 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:57.060028Z  INFO herdr::server::headless: client resize client_id=24 cols=125 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:38:57.147305Z  INFO herdr::server::headless: client resize client_id=24 cols=123 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T06:40:01.781135Z  INFO herdr::server::headless: client disconnected client_id=24
+2026-07-09T06:40:31.997665Z  INFO herdr::server::headless: client connected client_id=26 cols=123 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-09T06:41:24.874703Z  INFO herdr::server::headless: client disconnected client_id=26
+2026-07-09T10:07:50.386795Z  INFO herdr::server::headless: client connected client_id=28 cols=140 rows=75 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-09T11:01:57.702872Z  INFO herdr::pane: agent changed pane=13 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(3157807)
+2026-07-09T11:02:08.038884Z  INFO herdr::pane: agent changed pane=13 previous_agent=Some(Kiro) agent=None pgid=Some(2324512)
+2026-07-09T11:02:10.734782Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-09T11:02:15.371309Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Kiro) agent=None pgid=Some(1942516)
+2026-07-09T11:02:15.759908Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-09T11:02:29.058883Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(3158084)
+2026-07-09T11:03:54.928584Z  INFO herdr::server::headless: client resize client_id=28 cols=140 rows=74 cell_width_px=0 cell_height_px=0
+2026-07-09T11:03:59.418845Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-09T11:04:04.442054Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-09T11:05:25.756588Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-09T11:05:30.759153Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-09T11:15:59.200118Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Kiro) agent=None pgid=Some(1942516)
+2026-07-09T11:16:26.048856Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(3160980)
+2026-07-09T11:16:27.272408Z  INFO herdr::pane: agent changed pane=1 previous_agent=Some(Kiro) agent=None pgid=Some(1942516)
+2026-07-09T11:16:31.323049Z  INFO herdr::pane: agent changed pane=1 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(3161030)
+2026-07-09T11:48:06.103593Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-09T11:48:11.124608Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-09T12:45:07.124884Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-09T12:45:12.139338Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-09T14:51:36.273574Z  INFO herdr::server::headless: client disconnected client_id=28
+2026-07-10T09:45:35.033486Z  INFO herdr::server::headless: client connected client_id=30 cols=132 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-10T09:45:52.895420Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-10T09:45:57.909552Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-10T12:33:37.775735Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t1"
+2026-07-10T12:33:42.801220Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-10T12:33:44.559185Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t9"
+2026-07-10T12:33:49.584498Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-10T14:17:41.172625Z  INFO herdr::logging: tab focused event="tab.focus" subsystem="tab" outcome="ok" workspace_id="w1" tab_id="w1:t8"
+2026-07-10T14:17:46.195507Z  INFO herdr::logging: session saved event="persist.save" subsystem="persist" outcome="ok" path=/home/ephahoa/.config/herdr/session.json workspaces=1
+2026-07-10T14:21:01.727581Z  INFO herdr::server::headless: client disconnected client_id=30
+2026-07-10T14:21:22.894599Z  INFO herdr::server::headless: client connected client_id=32 cols=132 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-10T14:24:52.342698Z  INFO herdr::pane: agent changed pane=12 previous_agent=None agent=Some(Kiro) process=kiro-cli pgid=Some(3423011)
+2026-07-10T14:25:33.706163Z  INFO herdr::pane: agent changed pane=12 previous_agent=Some(Kiro) agent=None pgid=Some(3423011)
+2026-07-10T16:02:56.938960Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-10T16:12:38.211130Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-10T16:15:59.528342Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-10T16:17:06.935912Z  INFO herdr::app::actions: copied selection to clipboard
+2026-07-10T16:25:01.471325Z  INFO herdr::server::headless: client disconnected client_id=32
+2026-07-10T16:25:36.513595Z  INFO herdr::server::headless: client connected client_id=34 cols=132 rows=74 cell_width_px=0 cell_height_px=0 render_encoding=TerminalAnsi
+2026-07-10T16:31:36.808783Z  INFO herdr::app::actions: copied selection to clipboard

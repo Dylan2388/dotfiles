@@ -1,0 +1,29 @@
+2026-06-29T12:13:19.186363Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1942502
+2026-06-29T12:13:19.186470Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-06-29T12:13:19.431735Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-06-29T12:44:12.500836Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:44:12.501206Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:44:54.422999Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:44:54.423177Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:45:47.868738Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-06-29T12:45:47.869041Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-01T12:49:49.727624Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2290468
+2026-07-01T12:49:49.728484Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-07-01T12:49:49.930298Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-01T12:55:05.393282Z  WARN herdr::sound: sound playback failed sound=Done err=no mp3-capable audio player available: paplay exited with exit status: 1: Failed to open audio file.; pw-play exited with exit status: 1: error: failed to open audio file "/tmp/herdr-sound-2290468-0.mp3": Format not recognised.
+error: open failed: Input/output error; ffplay failed: No such file or directory (os error 2); mpg123 failed: No such file or directory (os error 2); mpv failed: No such file or directory (os error 2)
+2026-07-01T13:22:18.348575Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=2290468
+2026-07-01T13:22:36.748938Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2322309
+2026-07-01T13:22:36.749004Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-07-01T13:22:36.992642Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-01T13:46:03.569399Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2328871
+2026-07-01T13:46:03.569466Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-07-01T13:46:03.701163Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-01T13:47:18.366689Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-01T13:47:18.366995Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-01T15:20:59.315184Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2338278
+2026-07-01T15:20:59.315308Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-07-01T15:20:59.423217Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
+2026-07-02T10:17:33.411942Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2434067
+2026-07-02T10:17:33.412726Z  INFO herdr::client: connecting to server path=/home/ephahoa/.config/herdr/herdr-client.sock
+2026-07-02T10:17:33.552072Z  INFO herdr::client: handshake succeeded version=14 encoding=SemanticFrame
