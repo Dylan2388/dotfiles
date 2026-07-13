@@ -28,7 +28,7 @@ auto-update = check
 auto-update-channel = stable
 
 # extras
-shell-integration-features = no-cursor
+shell-integration-features = ssh-env,ssh-terminfo
 copy-on-select = clipboard
 # cmd or alt c copy (not vim yank)
 
