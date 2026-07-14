@@ -15,4 +15,20 @@ return {
       },
     },
   },
+  {
+    "folke/snacks.nvim",
+    opts = {
+      explorer = {
+        -- opens the picker-based explorer
+      },
+      picker = {
+        sources = {
+          explorer = {
+            hidden = true, -- show dotfiles
+            ignored = true, -- show gitignored files
+          },
+        },
+      },
+    },
+  },
 }
