@@ -1,10 +1,10 @@
 [theme]
-name = "tokyonight"
+name = "tokyo-night"
 auto_switch = false
 
 [keys]
-# Select/focus an agent by index (e.g. prefix then alt+1..9 focuses agent row 1..9)
-focus_agent = "prefix+alt+1..9"
+# Select/focus an agent by index directly: ctrl+1..9 focuses agent row 1..9 (no prefix)
+focus_agent = "ctrl+1..9"
 # Optional: cycle through agents without an index
-previous_agent = "prefix+alt+p"
-next_agent = "prefix+alt+n"
+previous_agent = "prefix+["
+next_agent = "prefix+]"
