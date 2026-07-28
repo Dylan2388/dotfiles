@@ -1,0 +1,37 @@
+os:
+  # Copy to clipboard via OSC 52 instead of the default xclip path.
+  # xclip fails here because there is no X DISPLAY (headless/multiplexed
+  # session); OSC 52 is emitted straight to the terminal, and Ghostty
+  # accepts OSC 52 clipboard writes. {{text}} is shell-quoted by lazygit.
+  copyToClipboardCmd: 'printf "\033]52;c;%s\007" "$(printf "%s" {{text}} | base64 | tr -d "\n")" > /dev/tty'
+
+gui:
+  # Nerd Font icons. Use "3" if your Ghostty font is a Nerd Font,
+  # otherwise set to "0" to avoid missing-glyph boxes.
+  nerdFontsVersion: "3"
+
+  # Theme matched to the Ghostty "Tokyo Night" theme
+  # (~/.config/ghostty/themes/tokyonight). Each value is a list:
+  # a color (name or hex) plus optional attributes (bold, underline, reverse).
+  theme:
+    activeBorderColor:      # focused panel border - Tokyo Night blue
+      - '#7aa2f7'
+      - bold
+    inactiveBorderColor:    # unfocused panel borders - grey (palette 8)
+      - '#414868'
+    optionsTextColor:       # keybinding hints at the bottom - blue
+      - '#7aa2f7'
+    selectedLineBgColor:    # selected line bg - selection-background
+      - '#33467c'
+    selectedRangeBgColor:   # multi-line selection bg
+      - '#33467c'
+    cherryPickedCommitBgColor:
+      - '#414868'
+    cherryPickedCommitFgColor:  # purple (palette 5)
+      - '#bb9af7'
+    unstagedChangesColor:   # unstaged file text - red (palette 1)
+      - '#f7768e'
+    defaultFgColor:         # default foreground
+      - '#c0caf5'
+    searchingActiveBorderColor:  # search highlight - yellow (palette 3)
+      - '#e0af68'
