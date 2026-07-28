@@ -61,6 +61,19 @@ return {
     },
   },
   {
+    -- LazyVim core only registers formatters for lua/fish/sh. JSON formatting
+    -- normally comes from the `lang.json` extra (via the jsonls LSP), which is
+    -- not enabled here. Register prettier (installed via Mason) for json/jsonc
+    -- so `<leader>cf` and format-on-save work.
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        json = { "prettier" },
+        jsonc = { "prettier" },
+      },
+    },
+  },
+  {
     "mfussenegger/nvim-lint",
     opts = {
       linters_by_ft = {
@@ -69,11 +82,18 @@ return {
     },
   },
   {
-    -- Pin to the stable `master` branch. The `main` rewrite requires the
-    -- tree-sitter CLI to build parsers, whose prebuilt binary needs
-    -- GLIBC 2.39 (Ubuntu 24.04). This system has GLIBC 2.35 (Ubuntu 22.04),
-    -- so `main` fails with a "GLIBC_2.39 not found" error.
+    -- Use the `main` branch, which LazyVim and Neovim 0.12 require. The
+    -- legacy `master` branch is frozen and its queries are incompatible with
+    -- Neovim 0.12's core treesitter runtime, which caused crashes like
+    --   languagetree.lua: attempt to call method 'range' (a nil value)
+    -- whenever a file was opened via snacks (explorer, lazygit, picker).
+    --
+    -- `main` builds parsers with the tree-sitter CLI. Its prebuilt binary
+    -- needs GLIBC 2.39, but this box has GLIBC 2.35 (Ubuntu 22.04), so we
+    -- build the CLI from source instead:
+    --   cargo install tree-sitter-cli --version 0.22.6 --locked
+    -- and put ~/.cargo/bin on PATH (see ~/.bashrc) so nvim can find it.
     "nvim-treesitter/nvim-treesitter",
-    branch = "master",
+    branch = "main",
   },
 }
