@@ -18,6 +18,17 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      -- snacks.bigfile switches a buffer to `filetype=bigfile` (disabling
+      -- LSP/treesitter/formatting) when a file is > `size` OR its average
+      -- line length is > `line_length`. Minified JSON lives on one huge line,
+      -- which tripped `line_length` and stripped the `json` filetype, making
+      -- `<leader>cf` report "no formatter". A minified JSON is precisely the
+      -- file you want to format, so disable the line-length heuristic and keep
+      -- only a generous size guard for genuinely huge files.
+      bigfile = {
+        size = 10 * 1024 * 1024, -- 10MB
+        line_length = 1000000000, -- effectively disable the long-line trigger
+      },
       explorer = {
         -- opens the picker-based explorer
       },
