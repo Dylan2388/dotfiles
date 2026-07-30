@@ -37,6 +37,39 @@ return {
           explorer = {
             hidden = true, -- show dotfiles
             ignored = true, -- show gitignored files
+            -- Start the folder picker in normal mode instead of insert.
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
+          -- Start the file pickers in normal mode instead of insert.
+          -- (Bound in LazyVim to <leader><space>, <leader>ff, <leader>fF,
+          -- <leader>ff (files), git_files, etc.) Grep/live pickers are left
+          -- alone so you can type the query immediately.
+          files = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
+          smart = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
+          git_files = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
+          recent = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
+          buffers = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
           },
         },
         -- Remap preview scrolling. <C-b> collides with the tmux prefix key,
