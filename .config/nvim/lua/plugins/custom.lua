@@ -71,6 +71,12 @@ return {
               vim.cmd.stopinsert()
             end,
           },
+          -- Git hunk picker (Snacks.picker.git_diff) also starts in normal mode.
+          git_diff = {
+            on_show = function()
+              vim.cmd.stopinsert()
+            end,
+          },
         },
         -- Remap preview scrolling. <C-b> collides with the tmux prefix key,
         -- so free it and use the Vim-style pair <C-e>/<C-y> instead. These are
