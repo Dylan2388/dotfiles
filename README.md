@@ -102,3 +102,15 @@ config push
 ## Cross-platform notes
 A single repository can be used across macOS and Ubuntu as long as the tracked file paths match what each application expects. We can create new branch for different OS.
 
+## Installation packages
+Installation for linux:
+1. Herdr
+2. Ghostty
+3. starship
+4. Neovim
+5. Lazyvim:
+	- Lazygit
+	- ripgrep
+	- fd	
+6. Agent-browser
+7. Herdr skill
