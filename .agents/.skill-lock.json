@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "skills": {
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "5ea13a6d9f0d4bb694405d79acd00cadec0d21bb138c4dd10fcf3c500cb835c2",
+      "pluginName": "example-skills",
+      "installedAt": "2026-07-14T08:09:00.965Z",
+      "updatedAt": "2026-07-14T08:09:00.965Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396",
+      "installedAt": "2026-07-14T08:09:10.332Z",
+      "updatedAt": "2026-07-14T08:09:10.332Z"
+    },
+    "herdr": {
+      "source": "herdrdev/herdr",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "skillPath": "skills/herdr/SKILL.md",
+      "skillFolderHash": "489d2c6ff7e951e47071fbc5446d99d20ea215fcc5e55b9e4ceaa5a578f22d06",
+      "installedAt": "2026-08-11T12:04:24.517Z",
+      "updatedAt": "2026-08-11T12:04:24.517Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
+}
