@@ -84,7 +84,10 @@ return {
       spec = {
         {
           mode = "n",
-          ft = "tex",
+          -- which-key v3 has no `ft` field; scope to LaTeX buffers with `cond`.
+          cond = function()
+            return vim.bo.filetype == "tex"
+          end,
           { "<localleader>l", group = "vimtex" },
           { "<localleader>ll", desc = "Compile (toggle continuous)" },
           { "<localleader>lo", desc = "Compiler output" },

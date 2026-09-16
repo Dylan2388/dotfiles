@@ -6,8 +6,9 @@ description: >-
   amend, rebase, restack, split commits, manage branches, or push in a git
   repository - even if they only say "commit this" or "push it". It defines how
   to route a change to the right feature branch (or create one), keep master
-  clean, rebase onto current master before publishing, and push only to the
-  master review ref (never feature branches) unless the user explicitly asks.
+  clean, rebase the feature branch onto current master as part of publishing,
+  and push only to the master review ref (never feature branches) unless the
+  user explicitly asks.
 metadata:
   author: ephahoa
   version: "1.0"
@@ -19,16 +20,12 @@ metadata:
 
 Keep git history clean and reviewable in a Gerrit-backed repo by treating
 `master` as an immutable mirror of `origin/master` and doing all work on
-feature branches that are rebased onto current master before every push.
+feature branches, rebased onto current master before every push.
 
-This skill encodes hard-won rules from real restacking/rebasing sessions.
-It is the ENTRY POINT for any git request: read it FIRST whenever the user
-initiates a git action (commit, amend, rebase, restack, split, branch, push -
-even a bare "commit this" or "push it"). It governs all branching, rebasing,
-routing, and push mechanics. Then, only when you actually compose or edit a
-commit message, defer to the `ai-commit-message` skill for the message format,
-body conventions, Jira reference, and Change-Id rules. In short: this workflow
-first, `ai-commit-message` second and only for the message itself.
+Read this FIRST for any git action (commit, amend, rebase, restack, split,
+branch, push - even a bare "commit this" or "push it"). It governs branching,
+rebasing, routing and push mechanics. Defer to the `ai-commit-message` skill
+only for the message itself: format, body, Jira reference, Change-Id rules.
 
 ## Golden rules (do not violate)
 
@@ -38,17 +35,16 @@ first, `ai-commit-message` second and only for the message itself.
    fast-forwarded to `origin/master` (safe, since it has no local commits). Its
    only job is to be a fresh, up-to-date rebase base.
 2. **All work lives on feature branches**, one logical feature per branch,
-   created from `master` and never stacked on another feature's branch. By
-   default a feature branch stays on its own base and a push never moves it
-   (see rule 3). You MAY rebase it onto latest master yourself when you want to
-   work against current master - that is safe and optional (see "Rebasing your
-   feature branch onto latest master").
-3. **Rebase before you publish, but only temporarily.** CI (`ci_rebase_commit`)
-   rejects patchsets not rebased on current master. So the rebase onto latest
-   master exists ONLY to produce the push. Do it on a throwaway branch, push
-   from there, then tear it down - leaving both `master` (== `origin/master`)
-   and your feature branch in their original condition. The developer's local
-   branch must not be disturbed by a push.
+   created from `master` and never stacked on another feature's branch. A branch
+   advances onto latest master whenever it is pushed (see rule 3), so its base
+   tracks upstream over time.
+3. **Rebase the branch onto latest master as part of every push.** CI
+   (`ci_rebase_commit`) rejects patchsets not rebased on current master, so the
+   rebase is mandatory. Rebase the feature branch ITSELF and push from it - the
+   branch is expected to move, so what you have locally is exactly what was
+   pushed and what CI sees. Back the branch up first
+   (`git branch backup-<date> <tip>`) since this rewrites its history, and drop
+   the backup once verified.
 4. **Push only to the master review ref.** In this repo
    `remote.origin.push = HEAD:refs/for/master`, so "push master" means push the
    feature commits to `refs/for/master` for review. **Never push feature branch
@@ -118,102 +114,174 @@ To fold staged changes into an earlier commit in a stack:
 
 `--fixup`/autosquash preserves the target commit's message and `Change-Id`.
 
+### Dropping a commit from the stack
+
+Deleting its line from the rebase todo is enough, and it can be done
+non-interactively - in the SAME rebase that autosquashes a fixup:
+
+```bash
+GIT_SEQUENCE_EDITOR='sed -i -E "/<subject pattern>/d"' GIT_EDITOR=true \
+    git rebase -i --autosquash <base>
+```
+
+Match the pattern on a distinctive part of the subject. Verify afterwards that
+the commit is gone (`git log --oneline <base>..HEAD | grep -i <pattern>`) and
+that the survivors kept their Change-Ids.
+
+## Splitting a commit into several
+
+When one commit does two unrelated jobs (e.g. two pipeline steps), split it so
+each commit stands on its own. Work from the parent and rebuild:
+
+```bash
+git branch backup-<date> <tip>            # cheap insurance
+git stash push --include-untracked -m wip # rewrite needs a clean tree
+git reset --mixed <parent-of-commit>      # content stays in the worktree
+# stage subset 1 -> commit 1 ; stage subset 2 -> commit 2
+git diff <original-sha> HEAD              # MUST be empty
+```
+
+Rules:
+
+- **The final `git diff <original-sha> HEAD` must be empty.** That proves no
+  content drifted, and it also guarantees a later `stash pop` applies cleanly,
+  because the tree is byte-identical to what the stash was made against.
+- **Change-Id: keep the original on the commit that matches the original
+  subject** (that Gerrit change keeps its history and review comments); let the
+  commit-msg hook mint a fresh one for the new commit. Never reuse one
+  Change-Id for two commits.
+- **A file touched by both commits** (typically a README) is divided by content,
+  not by hunk juggling: edit the shared file down to commit 1's part, commit,
+  then restore the full version from the original commit
+  (`git checkout <original-sha> -- <path>`) and commit the rest.
+- **Decide where a shared support file goes by who uses it.** Check imports
+  rather than guessing: a constants/defaults module belongs with the commit
+  whose module actually references it, so each commit builds and lints alone.
+- **Staging a deletion**: `git add <deleted-path>` can fail with "did not match
+  any files"; use `git rm <path>` or `git add -A <path>`.
+
+## Moving a staged change to another branch
+
+Switching branches with a dirty tree breaks as soon as an edited file exists
+only on the current branch (a file created by one of its commits): git cannot
+carry it to a branch where it does not exist. So do NOT rely on `git switch`
+carrying the change over. Route it as a patch instead:
+
+```bash
+git diff --cached > /tmp/change.patch      # capture the staged work
+git checkout HEAD -- <those paths>         # remove it from THIS branch
+git stash push --include-untracked -m wip  # park the rest, tree now clean
+git switch <target-branch>                 # or create it from clean master
+git apply --3way /tmp/change.patch         # --3way survives context drift
+git add <paths> && git commit ...          # or --amend for an existing commit
+git switch <original-branch> && git stash pop stash@{0}
+```
+
+For a single file, `git show :./<path> > /tmp/new-content` captures the staged
+version. Inside a subdirectory the index path needs the `./` prefix, otherwise
+git fails with "path ... is in the index, but not ...".
+
+Verify the patch landed intact: comparing the re-generated `git diff --cached`
+against the saved patch, only the hunk header line numbers may differ (the
+target branch has different surrounding content) - never the `+`/`-` lines.
+
+## Rebasing every branch onto new master
+
+When refreshing all local work after master advances:
+
+1. Stash the working tree, then fast-forward master
+   (`git switch master && git merge --ff-only origin/master`).
+2. Before rebasing, find work that already landed upstream:
+   `git cherry origin/master <branch>` marks each commit `-` when an equivalent
+   patch is already in master, `+` when it is not. Confirm a `-` by locating its
+   Change-Id in `origin/master`.
+3. Rebase each branch (`git switch <b> && git rebase origin/master`), and check
+   content survived with
+   `git range-diff <old-tip>~N..<old-tip> origin/master..<b>` - every row must
+   show `=`.
+4. A branch whose commits all landed upstream ends up with zero commits. Delete
+   it with `git branch -d` (which refuses unless it is truly merged), never
+   `-D`.
+5. Restore the stash last. Expect conflicts where upstream touched the same
+   files: check what master actually landed before resolving (a merged version
+   of your own change can differ from your local copy - review can drop parts of
+   it), and resolve auto-generated files (image manifests, lock files) to
+   master's version.
+
 ## Publishing (the push sequence)
 
-The rebase is temporary and exists only to make CI-valid patchsets. Do it on a
-throwaway branch so that, once the push is done, `master` and the feature branch
-are back in their original condition. Run this exact sequence:
+Publishing rebases the feature branch onto current master and pushes from it, so
+the branch, the pushed patchset and CI all agree. Run this exact sequence:
 
 ```bash
 # 0. Snapshot state + protect the working tree
 git status --short                               # remember this to verify later
-git rev-parse <feature-branch>                   # remember the ORIGINAL tip
+git rev-parse <feature-branch>                   # ORIGINAL tip, for recovery
+git branch backup-<date> <feature-branch>        # history rewrite ahead
 git stash push --include-untracked -m wip-push   # only if the tree is dirty
 
 # 1. Keep master current: fast-forward it to origin/master (never revert it)
 git fetch origin master --quiet
 git branch -f master origin/master               # safe FF; master has no local commits
 
-# 2. Rebase for the push on a THROWAWAY branch - never move the real branch
-git switch -c tmp-push <feature-branch>
+# 2. Rebase the feature branch itself onto latest master
+git switch <feature-branch>
 git rebase master
 
 # 3. Push the rebased commits to the master review ref (NOT a branch ref)
 git push origin HEAD:refs/for/master
 
-# 4. Tear down: delete the temp branch and restore the working tree.
-#    The feature branch was never touched; master stays == origin/master.
-git switch <feature-branch>
-git branch -D tmp-push
+# 4. Restore the working tree, then drop the backup once verified
 git stash pop stash@{0}                          # onto the branch where the wip files live
+git branch -D backup-<date>
 ```
 
-After this, verify the restore:
+After this, verify:
 
-- `git rev-parse <feature-branch>` equals the ORIGINAL tip from step 0
-  (the branch is byte-for-byte unchanged - the rebase happened only on
-  `tmp-push`, which is now gone).
+- Every commit survived the rebase unchanged - each row must show `=`:
+  `git range-diff <ORIGINAL-tip>~N..<ORIGINAL-tip> master..<feature-branch>`
+  (N = number of commits on the branch). Only then drop the backup.
 - `master` equals `origin/master` (`git rev-parse master origin/master`).
+- The branch tip HAS moved (that is expected now) and its commits kept their
+  Change-Ids.
 
 Notes:
 
-- "Always up-to-date with origin/master" refers to `master`: refresh it every
-  push (step 1). That is its canonical condition, not a temporary change - do
-  not revert it. What you restore to original condition is the **feature
-  branch** (and the working tree).
-- Step 3 pushes the feature branch's commits (and any ancestor commits not yet
-  on origin/master) to Gerrit for review. That is the only push. Do **not**
-  `git push origin <feature-branch>` (a branch ref) unless the user explicitly
-  asks - then confirm first. Master advances on the server only when a reviewer
-  submits; you never push `refs/heads/master` directly.
+- Step 1 refreshing `master` is its canonical condition, not a temporary
+  change, so do not revert it. Only the working tree gets restored - the
+  **feature branch is meant to stay rebased**.
+- Step 3 pushes the branch's commits (plus any ancestors not yet upstream) for
+  review. That is the only push. Master advances on the server only when a
+  reviewer submits; never push `refs/heads/master`, and never a feature branch
+  ref unless the user explicitly asks.
 - The pre-push hook runs `git pull origin master --rebase` and needs a clean
-  tree; that is why step 0 stashes. Do not use `SKIP_REBASE=1` to dodge a dirty
-  tree - stash instead. Because `tmp-push` is already rebased on master, the
-  hook's rebase is a clean no-op.
-- If step 2 conflicts, the feature branch is not independent of another
-  feature's commits or upstream touched its files - re-root it on master and
-  resolve before pushing (check `git log --oneline master..<branch>` and
+  tree - that is why step 0 stashes. Never use `SKIP_REBASE=1` to dodge a dirty
+  tree. Since the branch is already rebased, the hook's rebase is a no-op.
+- If step 2 conflicts, the branch is not independent of another feature or
+  upstream touched its files - resolve it (or `git rebase --abort` and recover
+  from `backup-<date>`) before pushing
+  (`git log --oneline master..<branch>`,
   `git log --oneline <old-base>..origin/master -- <paths>`).
-- Prefer the throwaway `tmp-push` branch over rebasing the real branch and
-  resetting it back; it cannot accidentally leave the feature branch moved.
+- Because the branch itself moves, expect the stash pop in step 4 to meet
+  upstream changes in the same files. That is normal: see "Preserving the
+  working tree across rewrites".
 
-## Rebasing your feature branch onto latest master (optional)
+## Rebasing a feature branch outside a push
 
-Separate from publishing, you may advance a branch onto the newest master
-whenever you want to build or test against current master, or resolve upstream
-conflicts early. Unlike the push flow, this permanently moves the branch - and
-it rewrites ONLY the branch, never `master`:
+The push sequence already rebases the branch, so a separate rebase is only
+needed to build or test against current master before publishing:
 
 ```bash
 git fetch origin master        # updates the origin/master ref only
-git switch <feature-branch>    # stand on the branch you are changing
-git rebase origin/master       # replay THIS branch's commits onto newest master
+git switch <feature-branch>    # stash first if the tree is dirty
+git rebase origin/master       # do NOT 'git branch -f master' for this
+git range-diff <feature-branch>@{1} <feature-branch>   # every row must be '='
 ```
 
-Key points:
-
-- `git rebase` only ever rewrites the branch you are on. Rebasing *onto*
-  `origin/master` leaves your local `master` pointer exactly where it is - do
-  NOT `git branch -f master ...` for this. Nothing happens to `master`.
-- A branch that already has its own commits cannot be "fast-forwarded" to master
-  (its tip is not an ancestor of master). Rebase IS the operation that advances
-  the base to master and replays your commits on top - there is no separate
-  fast-forward-then-reattach step. (A real `--ff-only` only applies when the
-  branch has no commits of its own yet.)
-- Branch structure is preserved: commit order and content are unchanged, only
-  SHAs/parents differ. Change-Ids are kept, so Gerrit changes stay linked. Add
-  `--rebase-merges` only if the branch intentionally contains merge commits.
-- Stash first if the tree is dirty; resolve conflicts if upstream touched your
-  files.
-- Verify nothing drifted using the reflog:
-  `git range-diff <feature-branch>@{1} <feature-branch>` - every row should show
-  `=` when there were no conflicts.
-
-This is low-consequence because feature branches are private (never pushed as
-branch refs), so rewriting their history affects no one. Choose it for
-freshness; skip it to keep a stable base. Either way a later push still works -
-if the branch is already on latest master, the throwaway `tmp-push` rebase in
-the publish sequence is just a clean no-op.
+Safe to do freely: feature branches are never pushed as branch refs, so
+rewriting their history affects no one, and Change-Ids survive so Gerrit changes
+stay linked. Add `--rebase-merges` only if the branch intentionally contains
+merge commits.
 
 ## Rebase safety checklist
 
@@ -228,6 +296,10 @@ the publish sequence is just a clean no-op.
   `git branch backup-<date> <tip>` … `git branch -D backup-<date>`.
 - **Anticipate conflicts** before moving a base: check whether upstream touched
   your files, e.g. `git log --oneline <old-base>..origin/master -- <paths>`.
+- **Take reference copies of file content from the commit, not the worktree.**
+  A `cp`/snapshot of a working file taken before stashing silently includes the
+  unstaged edits too, which then leak into the rewrite. Use
+  `git show <sha>:<path>` or `git checkout <sha> -- <path>`.
 
 ## Preserving the working tree across rewrites
 
@@ -240,6 +312,11 @@ Uncommitted edits often outlive a rebranch. To keep them intact:
    (modify/delete). Reset the bad pop (`git reset --hard HEAD`, clean debris)
    and pop onto the correct branch instead - the stash is preserved on a
    conflicted pop.
+   Because the stash survives, `git reset --hard HEAD` is the safe way to abort
+   a half-applied pop: it clears the unmerged paths (`UU`/`DU`) that block a
+   branch switch and loses nothing. Verify the stash is still listed first, then
+   re-apply it on the right branch (`git stash apply`, keeping the entry until
+   the result is confirmed).
 3. Never disturb a pre-existing stash you did not create. Check
    `git stash list` first and pop your entry by explicit `stash@{n}`.
 4. After popping, diff the restored files against the pre-rewrite state to
@@ -261,14 +338,10 @@ Uncommitted edits often outlive a rebranch. To keep them intact:
 ## Quick reference: end-state you are aiming for
 
 ```
-master              == origin/master        # always current, clean, no local commits
-feature-a           its own commits [a1..]  # created from master; stays put locally
+master              == origin/master        # current, clean, no local commits
+feature-a           its own commits [a1..]  # rebased onto master at each push
 feature-b           its own commits [b1..]  # independent of A
 ```
 
-- A **push** never changes these: the rebase happens on a throwaway `tmp-push`
-  branch, so after a push the feature branch is byte-identical to before and
-  `master` is still `origin/master`. (You may still choose to rebase the branch
-  onto master yourself - see the optional section above.)
-- No `backup-*` branches left behind; working-tree WIP restored on its owning
-  feature branch.
+A push advances the branch onto current master and leaves no `backup-*`
+branches or stranded WIP behind.
