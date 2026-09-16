@@ -56,6 +56,7 @@ Everything bound in `config.toml`, on top of herdr's own defaults.
 | `prefix+t` | navigator: jump to anything |
 | `prefix+shift+t` | navigator: side pane |
 | `prefix+shift+b` | navigator: jump to previous workspace |
+| `prefix+shift+r` | rename the focused agent (popup) |
 | `prefix+p` | plugin manager |
 | `prefix+g` / `prefix+shift+g` | lazygit in a split / in its own tab |
 | `prefix+e` / `prefix+shift+e` | nvim sidebar / open file from agent output |
@@ -77,6 +78,8 @@ line) in non-Vim panes; see `HERDR_NAV_PASSTHROUGH_RE` below.
 
 ## Also part of this setup
 
+- `scripts/rename-current-agent.sh` - backs `prefix+shift+r`. The path in
+  `config.toml` is absolute, so it needs editing per machine.
 - `~/.config/nvim/lua/config/keymaps.lua` — sources vim-herdr-navigation's
   `editor/nvim.lua`. Must load after LazyVim's keymaps, hence this file rather
   than `after/plugin/`.
