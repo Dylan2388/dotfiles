@@ -117,8 +117,8 @@ inherit_herdr = true
 # Keep roots short; zoxide should handle most frequent directories.
 # zoxide is not installed here, so roots are the only source of not-yet-open dirs.
 [[roots]]
-path = "~/Projects"
-max_depth = 3
+path = "~"
+max_depth = 2
 
 # Optional agent aliases. All match fields are optional and matched as text contains.
 # Aliases become extra search terms for matching agent panes.

@@ -1,6 +1,0 @@
-# per-pane lazygit layout layer — machine-generated, do not edit
-# layout: expanded
-gui:
-  sidePanelWidth: 0.3333
-  expandFocusedSidePanel: true
-  portraitMode: never

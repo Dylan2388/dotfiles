@@ -10,16 +10,6 @@ focus_agent = "ctrl+1..9"
 previous_agent = "prefix+["
 next_agent = "prefix+]"
 
-# Rename the agent in the currently focused pane.
-# There is no built-in rename_agent action, so this is a custom command.
-[[keys.command]]
-key = "prefix+shift+r"
-type = "popup"
-command = "/home/ephahoa/.config/herdr/scripts/rename-current-agent.sh"
-description = "rename the focused agent"
-width = "70%"
-height = "30%"
-
 [ui.toast]
 delivery = "herdr"
 
