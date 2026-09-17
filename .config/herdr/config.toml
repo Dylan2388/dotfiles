@@ -201,3 +201,14 @@ key = "prefix+shift+b"
 type = "plugin_action"
 command = "herdr-navigator.jump-back"
 description = "jump to previous workspace"
+
+# terminal-browser — not a plugin; it detects herdr via HERDR_PANE_ID and opens
+# its own split via `herdr pane split`. type = "pane" so HERDR_PANE_ID is set.
+# prefix+u ("URL"): prefix+b is herdr's toggle_sidebar, prefix+alt+b and
+# prefix+shift+b are bound above, and prefix+ctrl+b is reserved because
+# keys.prefix is itself ctrl+b.
+[[keys.command]]
+key = "prefix+u"
+type = "pane"
+command = "terminal-browser open"
+description = "terminal-browser"
