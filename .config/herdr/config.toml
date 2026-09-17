@@ -212,3 +212,13 @@ key = "prefix+u"
 type = "pane"
 command = "terminal-browser open"
 description = "terminal-browser"
+
+# Both default to true in herdr. version_check polls herdr.dev for new
+# releases; manifest_check polls for agent-detection manifest updates, so
+# disabling it pins the manifests in
+# ~/.local/state/herdr/agent-detection/remote/ at their current versions.
+# Takes effect only after `herdr server reload-config` or a server restart.
+[update]
+version_check = false
+manifest_check = false
+
