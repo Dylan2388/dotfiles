@@ -3,6 +3,14 @@ onboarding = false
 name = "tokyo-night"
 auto_switch = false
 
+# Let the terminal background show through instead of painting a panel colour.
+# "reset" is herdr's documented spelling; herdr-navigator's parse_color maps
+# reset/default/none/transparent to the same terminal-default colour. Pair this
+# with your terminal emulator's own opacity setting for real alpha.
+[theme.custom]
+panel_bg = "reset"
+surface0 = "reset"
+
 [keys]
 # Select/focus an agent by index directly: ctrl+1..9 focuses agent row 1..9 (no prefix)
 focus_agent = "ctrl+1..9"
@@ -180,18 +188,14 @@ command = "vim-herdr-navigation.right"
 description = "navigate right (vim/herdr)"
 
 # herdr-navigator — one fuzzy index over workspaces, agents, sessions, roots.
-# prefix+t shadows herdr's built-in prefix+t; prefix+shift+t shadows its shift pair.
+# prefix+t is free in herdr's defaults, so this shadows nothing. The plugin's
+# open-side action is deliberately left unbound: its chord, prefix+shift+t, is
+# herdr's built-in rename_tab, and one navigator entry point is enough.
 [[keys.command]]
 key = "prefix+t"
 type = "plugin_action"
 command = "herdr-navigator.open"
 description = "jump to anything"
-
-[[keys.command]]
-key = "prefix+shift+t"
-type = "plugin_action"
-command = "herdr-navigator.open-side"
-description = "navigator side pane"
 
 # Jump Back toggles current/previous workspace. Bound to prefix+shift+b rather
 # than the README's prefix+l, which is herdr's focus-pane-right and the way out

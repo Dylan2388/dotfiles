@@ -1,0 +1,78 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  // Local OpenAI-compatible gateway (Ray/vLLM on localhost:7999).
+  // Kept under its own provider id instead of overriding the built-in "openai"
+  // one, so a real OpenAI key still works and models.dev metadata for OpenAI
+  // models is not applied to these. Uses @ai-sdk/openai-compatible rather than
+  // @ai-sdk/openai because the latter can target OpenAI's Responses API, which
+  // a vLLM backend does not implement; openai-compatible stays on
+  // /v1/chat/completions. opencode installs the package on first use.
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Local (localhost:7999)",
+      "options": {
+        "baseURL": "http://localhost:7999/v1",
+        "apiKey": "dummy"
+      },
+      "models": {
+        "Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8": {
+          "name": "Qwen3 Coder 480B A35B FP8",
+          "tool_call": true,
+          "limit": {
+            // context = max_total_tokens reported by the endpoint for this
+            // model. opencode requires output alongside it; 65536 is a cap for
+            // display/truncation only, lower it if replies get clipped.
+            "context": 204800,
+            "output": 65536
+          }
+        },
+        // Long-context slot. The matching coder variant,
+        // Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8-1M, is listed by the gateway
+        // but rejected with "administratively disabled" (so is the 30B 1M
+        // coder), so this points at the 1M coding model the gateway itself
+        // serves for tag:1m+coding. Swap the key back if it gets re-enabled.
+        "Qwen/Qwen3.8-27B-FP8-1M": {
+          "name": "Qwen3.8 27B FP8 (1M)",
+          "tool_call": true,
+          "limit": {
+            "context": 1000000,
+            "output": 65536
+          }
+        },
+        "zai-org/GLM-5.2-FP8": {
+          "name": "GLM 5.2 FP8",
+          "tool_call": true,
+          "limit": {
+            "context": 196608,
+            "output": 65536
+          }
+        },
+        // Returns its chain of thought in a separate reasoning_content field,
+        // so interleaved names that field for opencode. Gateway lifecycle for
+        // this one is "Experimental".
+        "deepseek-ai/DeepSeek-V4-Flash-0731": {
+          "name": "DeepSeek V4 Flash 0731",
+          "tool_call": true,
+          "reasoning": true,
+          "interleaved": "reasoning_content",
+          "limit": {
+            "context": 262144,
+            "output": 65536
+          }
+        },
+        // Reasons internally but exposes no reasoning field over this gateway,
+        // so no reasoning/interleaved keys here.
+        "openai/gpt-oss-120b": {
+          "name": "GPT-OSS 120B",
+          "tool_call": true,
+          "limit": {
+            "context": 131072,
+            "output": 32768
+          }
+        }
+      }
+    }
+  }
+}
