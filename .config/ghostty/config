@@ -5,6 +5,9 @@ background-opacity = 0.88
 background-blur-radius = 25
 
 font-family = JetBrainsMonoNL Nerd Font
+font-family = DejaVu Sans Mono
+font-family = FreeMono
+font-family = Noto Sans Symbols2
 font-size = 14
 font-feature = -liga,-calt,-dlig
 cursor-style = block
@@ -71,3 +74,6 @@ keybind = ctrl+space>l=goto_split:right
 #Shaders
 # custom-shader = shaders/bettercrt.glsl
 # custom-shader = shaders/retro-terminal.glsl
+
+# U+F7A1 only exists in GFS fonts here; without this map, Ghostty 1.4.0 fails the fallback lookup and blanks the whole row
+font-codepoint-map = U+F7A1=GFS Didot
